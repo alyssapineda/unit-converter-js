@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin:0 auto;
+  padding:0;
+}
+
+body {
+  font-family: 'Sono', sans-serif;
+  background-color: #F3F4F6;
+  text-align:center;
+}
+
+/* LAYOUTS */
+header,
+footer {
+  height:100px;
+}
+
+.container {
+  height:100vh;
+  width:100%;
+  display:grid;
+  place-content: center;
+}
+
+.main-wrapper {
+  width:550px;
+  height:729px;
+  background-color:#F4F4F4;
+  border-radius:10px;
+  box-shadow:  15px 15px 60px #d3ccf2,
+             -15px -15px 60px #ffffff;
+}
+
+.convert-wrapper {
+  padding:20px;
+  background-color:#6943FF;
+  border-radius:10px;
+}
+
+.conversions {
+  margin:38px 50px 30px 50px;
+  padding:20px;
+  background-color:#fff;
+  border-radius:10px;
+}
+
+/* TYPOGRAPHY */
+
+.title {
+  color:#fff;
+  padding:20px;
+  font-weight:bold;
+  font-size:28px;
+}
+
+.secondary-title {
+  font-size:20px;
+  margin-bottom:5px;
+}
+
+.description {
+  font-size:14px;
+}
+/* COMPONENTS */
+input {
+  color:#fff;
+  font-weight:bold;
+  text-align:center;
+
+}
+#convert-input {
+  margin-bottom:20px;
+  border:1px solid #fff;
+  background-color: transparent;
+  width:117px;
+  font-size:58px;
+  border-radius:10px;
+}
+
+input::placeholder {
+  color:#fff;
+}
+
+/* BUTTONS */
+#convert-btn {
+  display:block;
+  font-size:16px;
+  color:#3D3D3D;
+  background-color:#fff;
+  border-radius:10px;
+  border:none;
+  width:117px;
+  height:42px;
+  cursor:pointer;
+
+}
+
+#convert-btn:hover {
+  color:#fff;
+  font-weight:bold;
+  transition: 300ms;
+  background-color:#ad9bff;
+}
+
+/* MEDIA QUERY */
